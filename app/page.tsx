@@ -1,10 +1,26 @@
 import Image from "next/image";
 import { Roboto_Condensed } from "next/font/google";
+import { ChevronDoubleRightIcon } from "@heroicons/react/24/outline";
 
 const roboto = Roboto_Condensed({
   weight: ["300", "400", "700"],
   subsets: ["latin"],
 });
+
+const prognosticators = [
+  "Create your own SocialBets Zone",
+  "Post your sports bets and create interesting sports betting content",
+  "Achieve a high betting win rate",
+  "Gain Followers",
+  "Earn",
+];
+
+const bettors = [
+  "Create a SocialBets Account",
+  "Choose your subscription level",
+  "Join top Sports Prognosticators' SocialBets Zones",
+  "Achieve a high sports betting win rate",
+];
 
 export default function Home() {
   return (
@@ -65,20 +81,29 @@ export default function Home() {
                 to meet, socialize, share sports betting alpha and content… and{" "}
                 <span className="text-indigo-400">earn!</span>
               </p>
-              <p className={`text-[28px] leading-[46px] ${roboto.className} `}>
+              <p
+                className={`text-[28px] leading-[46px] text-indigo-400 ${roboto.className} `}
+              >
                 Why should sports betting content and predictions be confined to
                 major players in the sports book world?
               </p>
               <p className={`text-[28px] leading-[46px] ${roboto.className} `}>
-                <span className="text-indigo-400">Social Betz</span> allows YOU
-                to become a sports prognosticator and content creator to earn
-                cold, hard crypto for your efforts.
+                <span className="text-indigo-400">Social Betz</span> allows{" "}
+                <span className="text-indigo-400">YOU</span> to become a sports
+                prognosticator and content creator to earn cold, hard{" "}
+                <span className="text-indigo-400">crypto</span> for your
+                efforts.
               </p>
               <p className={`text-[28px] leading-[46px] ${roboto.className} `}>
                 With <span className="text-indigo-400">Social Betz</span>, users
-                are incentivized to share their sports bets, sports betting
-                strategies, and sports betting content in a decentralized
-                environment in order to gain a strong following and earn!
+                are incentivized to share their{" "}
+                <span className="text-indigo-400">
+                  sports bets, sports betting strategies
+                </span>
+                , and{" "}
+                <span className="text-indigo-400">sports betting content</span>{" "}
+                in a decentralized environment in order to gain a strong
+                following and <span className="text-indigo-400">earn!</span>
               </p>
             </div>
             <div className="flex w-[500px] justify-center items-center ">
@@ -111,40 +136,36 @@ export default function Home() {
           <p className="text-black/70">How Social Betz Works</p>
         </div>
         <div className="flex flex-col  gap-16 text-white xl:pb-24">
-          <div className="flex justify-between items-center xl:px-[100px] xl:mt-16 relative">
+          <div className="flex justify-between  xl:px-[100px] xl:mt-16 relative gap-16">
             <div className="flex flex-col font-thin gap-10 w-full xl:max-w-[1000px] bg-black/80 xl:bg-transparent px-[22px] xl:px-0 pt-10 pb-10 z-10">
-              <p className={`text-[28px] leading-[46px] ${roboto.className} `}>
-                <span className="text-indigo-400">Social Betz</span> is a place
-                for sports betting enthusiasts, both amateur and professional,
-                to meet, socialize, share sports betting alpha and content… and{" "}
-                <span className="text-indigo-400">earn!</span>
-              </p>
-              <p className={`text-[28px] leading-[46px] ${roboto.className} `}>
-                Why should sports betting content and predictions be confined to
-                major players in the sports book world?
-              </p>
-              <p className={`text-[28px] leading-[46px] ${roboto.className} `}>
-                <span className="text-indigo-400">Social Betz</span> allows YOU
-                to become a sports prognosticator and content creator to earn
-                cold, hard crypto for your efforts.
-              </p>
-              <p className={`text-[28px] leading-[46px] ${roboto.className} `}>
-                With <span className="text-indigo-400">Social Betz</span>, users
-                are incentivized to share their sports bets, sports betting
-                strategies, and sports betting content in a decentralized
-                environment in order to gain a strong following and earn!
-              </p>
+              <div className="p-8 bg-black/80 font-medium text-purple-400 text-4xl">
+                For Sports Prognosticators
+              </div>
+              {prognosticators.map((item, index) => (
+                <div key={index} className="flex items-center gap-4">
+                  <ChevronDoubleRightIcon className="w-10 text-indigo-300 inline" />
+                  <p
+                    className={`text-[28px] text-indigo-200 leading-[46px] ${roboto.className} `}
+                  >
+                    {item}
+                  </p>
+                </div>
+              ))}
             </div>
-            <div className="flex w-[500px] justify-center items-center ">
-              <Image
-                src="/vertical-letters.svg"
-                width={133}
-                height={439}
-                placeholder="blur"
-                blurDataURL="/vertical-letters.svg"
-                alt="social betz"
-                className="drop-shadow-xl"
-              />
+            <div className="flex flex-col font-thin gap-10 w-full xl:max-w-[1000px] bg-black/80 xl:bg-transparent px-[22px] xl:px-0 pt-10 pb-10 z-10">
+              <div className="p-8 bg-black/80 font-medium text-indigo-400 text-4xl">
+                For Sports Bettors
+              </div>
+              {bettors.map((item, index) => (
+                <div key={index} className="flex items-center gap-4">
+                  <ChevronDoubleRightIcon className="w-10 text-indigo-300 inline" />
+                  <p
+                    className={`text-[28px] text-indigo-200 leading-[46px] ${roboto.className} `}
+                  >
+                    {item}
+                  </p>
+                </div>
+              ))}
             </div>
           </div>
         </div>
@@ -162,44 +183,32 @@ export default function Home() {
             alt="game modes"
             className="w-[40px] xl:w-[80px]"
           />
-          <p className="text-black/70">How Social Betz Works</p>
+          <p className="text-black/70">Partners</p>
         </div>
-        <div className="flex flex-col  gap-16 text-white xl:pb-24">
-          <div className="flex justify-between items-center xl:px-[100px] xl:mt-16 relative">
-            <div className="flex flex-col font-thin gap-10 w-full xl:max-w-[1000px] bg-black/80 xl:bg-transparent px-[22px] xl:px-0 pt-10 pb-10 z-10">
-              <p className={`text-[28px] leading-[46px] ${roboto.className} `}>
-                <span className="text-indigo-400">Social Betz</span> is a place
-                for sports betting enthusiasts, both amateur and professional,
-                to meet, socialize, share sports betting alpha and content… and{" "}
-                <span className="text-indigo-400">earn!</span>
-              </p>
-              <p className={`text-[28px] leading-[46px] ${roboto.className} `}>
-                Why should sports betting content and predictions be confined to
-                major players in the sports book world?
-              </p>
-              <p className={`text-[28px] leading-[46px] ${roboto.className} `}>
-                <span className="text-indigo-400">Social Betz</span> allows YOU
-                to become a sports prognosticator and content creator to earn
-                cold, hard crypto for your efforts.
-              </p>
-              <p className={`text-[28px] leading-[46px] ${roboto.className} `}>
-                With <span className="text-indigo-400">Social Betz</span>, users
-                are incentivized to share their sports bets, sports betting
-                strategies, and sports betting content in a decentralized
-                environment in order to gain a strong following and earn!
-              </p>
-            </div>
-            <div className="flex w-[500px] justify-center items-center ">
-              <Image
-                src="/vertical-letters.svg"
-                width={133}
-                height={439}
-                placeholder="blur"
-                blurDataURL="/vertical-letters.svg"
-                alt="social betz"
-                className="drop-shadow-xl"
-              />
-            </div>
+
+        <div className="flex gap-24 items-center xl:px-[100px] xl:mt-16 relative py-24">
+          <div className="flex justify-center items-center w-[350px] h-[350px] bg-purple-betz border transition-all hover:scale-[1.02] hover:bg-purple-betz-2">
+            <Image
+              src="/jugz-logo.png"
+              width={300}
+              height={439}
+              placeholder="blur"
+              blurDataURL="/jugz-logo.png"
+              alt="social betz"
+              className="drop-shadow-xl"
+            />
+          </div>
+
+          <div className="flex justify-center items-center w-[350px] h-[350px] bg-purple-betz border transition-all hover:scale-[1.02] hover:bg-purple-betz-2">
+            <Image
+              src="/slance-logo-350px.png"
+              width={300}
+              height={439}
+              placeholder="blur"
+              blurDataURL="/slance-logo-350px.png"
+              alt="social betz"
+              className="drop-shadow-xl"
+            />
           </div>
         </div>
       </section>
