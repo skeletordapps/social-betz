@@ -18,7 +18,7 @@ export default function Nav() {
   return (
     <>
       {/* DESKTOP */}
-      <main className="hidden lg:flex w-full max-w-[1920px]">
+      <main className="hidden lg:flex w-full max-w-[1920px] bg-black">
         <div
           className={`flex items-center justify-between w-full py-[35px] md:px-[20px] xl:px-[100px] border-b border-purple-betz/40 ${roboto.className}`}
         >
@@ -31,7 +31,6 @@ export default function Nav() {
                 placeholder="blur"
                 blurDataURL="/socialbetz-v1-dark.svg"
                 alt="logo"
-                // className="bg-blue-200"
               />
             </Link>
           </div>
@@ -48,8 +47,8 @@ export default function Nav() {
                   } ${
                     item.title !== routes[4].title
                       ? "border-purple-betz"
-                      : "border-orange-300"
-                  } ${item.title === routes[4].title && "text-orange-300"} `}
+                      : "border-orange-400"
+                  } ${item.title === routes[4].title && "text-orange-400"} `}
                 >
                   {item.title}
                 </Link>
@@ -130,7 +129,7 @@ export default function Nav() {
                     transition-all font-light text-[16px] bg-black p-4 bg-opacity-90 hover:bg-opacity-60 hover:text-white hover:border-l-[6px] hover:border-white border-green-fss rounded-lg shadow-md 
                     ${
                       item.href === routes[4].href
-                        ? "text-orange-300"
+                        ? "text-orange-400"
                         : "text-green-fss"
                     }
                     ${
@@ -141,7 +140,7 @@ export default function Nav() {
                     ${
                       item.href === page.href &&
                       item.href === routes[4].href &&
-                      "border-l-[6px] hover:text-orange-300 hover:border-orange-300"
+                      "border-l-[6px] hover:text-orange-400 hover:border-orange-400"
                     }
                   `}
                 >
