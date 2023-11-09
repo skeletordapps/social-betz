@@ -40,10 +40,10 @@ export default function Nav() {
                 <Link
                   key={index}
                   href={item.href}
-                  className={`transition-all hover:border-b pb-1 ${
+                  className={`transition-all hover:border-b-[5px] pb-1 ${
                     item.href === page.href &&
                     item.title !== routes[4].title &&
-                    "border-b"
+                    "border-b-[5px]"
                   } ${
                     item.title !== routes[4].title
                       ? "border-purple-betz"
