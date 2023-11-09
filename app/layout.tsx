@@ -19,7 +19,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`bg-black ${inter.className}`}>
+      <body className={`${inter.className}`}>
         <div className="flex flex-col items-center bg-main bg-no-repeat bg-top">
           <StateProvider>
             <Nav />
