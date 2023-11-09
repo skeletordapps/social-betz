@@ -83,14 +83,14 @@ export default function Nav() {
 
           <div className="flex gap-2 sm:gap-4 items-center">
             <button
-              className={`transition-all bg-green-fss w-[100px] sm:w-[120px] h-[33px] flex justify-center items-center rounded-lg text-[#443D3D] text-[12px] sm:text-[14px] font-medium hover:scale-[1.02] ${roboto.className}`}
+              className={`transition-all  w-[100px] sm:w-[120px] h-[33px] flex justify-center items-center rounded-lg text-[#443D3D] text-[12px] sm:text-[14px] font-medium hover:scale-[1.02] ${roboto.className}`}
             >
               Connect Wallet
             </button>
 
             <button
               onClick={() => setOpen(!open)}
-              className="transition-all w-[39px] h-[33px] text-black p-1 px-2 bg-green-fss rounded-lg hover:scale-[1.02]"
+              className="transition-all w-[39px] h-[33px] text-black p-1 px-2  rounded-lg hover:scale-[1.02]"
             >
               <svg
                 fill="none"

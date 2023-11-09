@@ -60,7 +60,7 @@ export default function Home() {
 
       {/* WHATS IS SOCIAL BETZ */}
       <section className="bg-black bg-section bg-no-repeat bg-center">
-        <div className="flex items-center gap-5 xl:gap-8 font-semibold text-[24px] xl:text-[60px] leading-[40px] bg-green-fss px-[26px] xl:px-[100px] py-6 bg-purple-betz-2 shadow-inner border-b border-t border-black">
+        <div className="flex items-center gap-5 xl:gap-8 font-semibold text-[24px] xl:text-[60px] leading-[40px]  px-[26px] xl:px-[100px] py-6 bg-purple-betz-2 shadow-inner border-b border-t border-black">
           <Image
             src="/lightening-white.svg"
             width={80}
@@ -123,7 +123,7 @@ export default function Home() {
 
       {/* HOW IT WORKS */}
       <section className="bg-black bg-inverted bg-no-repeat bg-center">
-        <div className="flex items-center gap-5 xl:gap-8 font-semibold text-[24px] xl:text-[60px] leading-[40px] bg-green-fss px-[26px] xl:px-[100px] py-6 bg-purple-betz-2 shadow-inner border-b border-t border-black">
+        <div className="flex items-center gap-5 xl:gap-8 font-semibold text-[24px] xl:text-[60px] leading-[40px] px-[26px] xl:px-[100px] py-6 bg-purple-betz-2 shadow-inner border-b border-t border-black">
           <Image
             src="/lightening-white.svg"
             width={80}
@@ -138,7 +138,7 @@ export default function Home() {
         <div className="flex flex-col  gap-16 text-white xl:pb-24">
           <div className="flex justify-between  xl:px-[100px] xl:mt-16 relative gap-16">
             <div className="flex flex-col font-thin gap-10 w-full xl:max-w-[1000px] bg-black/80 xl:bg-transparent px-[22px] xl:px-0 pt-10 pb-10 z-10">
-              <div className="p-8 bg-black/80 font-medium text-white text-4xl border border-purple-betz-2/30 rounded-md">
+              <div className="p-8 pl-2 font-medium text-purple-betz-2 text-4xl border-b border-purple-betz-2/50">
                 For Sports Prognosticators
               </div>
               {prognosticators.map((item, index) => (
@@ -153,7 +153,7 @@ export default function Home() {
               ))}
             </div>
             <div className="flex flex-col font-thin gap-10 w-full xl:max-w-[1000px] bg-black/80 xl:bg-transparent px-[22px] xl:px-0 pt-10 pb-10 z-10">
-              <div className="p-8 bg-black/80 font-medium text-indigo-400 text-4xl border border-purple-betz/50 rounded-md">
+              <div className="p-8 pl-2 font-medium text-indigo-400 text-4xl border-b border-purple-betz/50">
                 For Sports Bettors
               </div>
               {bettors.map((item, index) => (
@@ -173,7 +173,7 @@ export default function Home() {
 
       {/* PARTNERS */}
       <section className="bg-black bg-section bg-no-repeat bg-center">
-        <div className="flex items-center gap-5 xl:gap-8 font-semibold text-[24px] xl:text-[60px] leading-[40px] bg-green-fss px-[26px] xl:px-[100px] py-6 bg-purple-betz-2 shadow-inner border-b border-t border-black">
+        <div className="flex items-center gap-5 xl:gap-8 font-semibold text-[24px] xl:text-[60px] leading-[40px]  px-[26px] xl:px-[100px] py-6 bg-purple-betz-2 shadow-inner border-b border-t border-black">
           <Image
             src="/lightening-white.svg"
             width={80}
