@@ -20,7 +20,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${inter.className}`}>
-        <div className="flex flex-col items-center bg-main bg-no-repeat bg-top">
+        <div className="flex flex-col items-center bg-main2 bg-no-repeat bg-top">
           <StateProvider>
             <Nav />
             {children}

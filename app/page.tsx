@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import { Roboto_Condensed } from "next/font/google";
 import { ChevronDoubleRightIcon } from "@heroicons/react/24/outline";
 
@@ -26,7 +27,7 @@ export default function Home() {
   return (
     <main className="flex flex-col w-full max-w-[1920px]">
       {/* TOP BANNER */}
-      <section className="flex flex-col">
+      {/* <section className="flex flex-col">
         <div className="flex justify-between items-center py-[70px] px-[26px] xl:px-[100px]">
           <div className="flex flex-col gap-12 text-white z-10 bg-black/80 xl:bg-transparent max-w-[920px]">
             <p className="font-semibold text-[40px] xl:text-[70px] leading-[50px] xl:leading-[70px] 2xl:leading-[40px]">
@@ -56,10 +57,38 @@ export default function Home() {
             className="mr-[26px] xl:mr-[52px] drop-shadow-2xl"
           />
         </div>
+      </section> */}
+
+      <section className="flex flex-col py-16">
+        <div className="flex items-center py-[70px] px-[26px] xl:px-[100px] gap-10">
+          <Image
+            src="/socialbets-v1-dark-logo.svg"
+            width={248}
+            height={243}
+            placeholder="blur"
+            blurDataURL="/socialbets-v1-dark-logo.svg"
+            alt="logo"
+          />
+
+          <div className="flex flex-col gap-12 text-white z-10 bg-black/80 xl:bg-transparent max-w-[920px]">
+            <div className="font-bold text-[40px] xl:text-[120px] leading-[50px] xl:leading-[70px] 2xl:leading-[110px]">
+              <p className="text-purple-betz">Bet.</p> <p>Post.</p>
+              <p className="text-purple-betz-2">Earn.</p>
+            </div>
+          </div>
+        </div>
+        <div className="flex flex-col pb-[70px] px-[26px] xl:px-[100px] text-white gap-10 max-w-[1000px]">
+          <p
+            className={`font-medium text-[22px] xl:text-[28px] 2xl:text-[52px] leading-[35px] 2xl:leading-[65px] ${roboto.className}`}
+          >
+            Welcome to SocialBetz.io - the first Web3 social sports betting
+            platform.
+          </p>
+        </div>
       </section>
 
       {/* WHATS IS SOCIAL BETZ */}
-      <section className="bg-black bg-section bg-no-repeat bg-center">
+      <section className="bg-black bg-numbers bg-no-repeat bg-center">
         <div className="flex items-center gap-5 xl:gap-8 font-semibold text-[24px] xl:text-[60px] leading-[40px]  px-[26px] xl:px-[100px] py-6 bg-purple-betz-2 shadow-inner border-b border-t border-black">
           <Image
             src="/lightening-white.svg"
@@ -106,7 +135,7 @@ export default function Home() {
                 following and <span className="text-indigo-400">earn!</span>
               </p>
             </div>
-            <div className="flex w-[500px] justify-center items-center ">
+            {/* <div className="flex w-[500px] justify-center items-center ">
               <Image
                 src="/vertical-letters.svg"
                 width={133}
@@ -116,13 +145,13 @@ export default function Home() {
                 alt="social betz"
                 className="drop-shadow-xl"
               />
-            </div>
+            </div> */}
           </div>
         </div>
       </section>
 
       {/* HOW IT WORKS */}
-      <section className="bg-black bg-inverted bg-no-repeat bg-center">
+      <section className="bg-black bg-soccer bg-no-repeat bg-center">
         <div className="flex items-center gap-5 xl:gap-8 font-semibold text-[24px] xl:text-[60px] leading-[40px] px-[26px] xl:px-[100px] py-6 bg-purple-betz-2 shadow-inner border-b border-t border-black">
           <Image
             src="/lightening-white.svg"
