@@ -66,16 +66,16 @@ export default function Nav() {
       {/* MOBILE */}
       <main className="flex flex-col lg:hidden w-full bg-nav bg-no-repeat bg-cover relative z-20">
         <div
-          className={`flex items-center justify-between w-full pt-[25px] pb-[10px] px-[20px] ${roboto.className}`}
+          className={`flex items-center justify-between w-full pt-[25px] px-[20px] ${roboto.className}`}
         >
           <div className="min-w-[138px] max-w-[138px] sm:min-w-[168px] sm:max-w-[168px]">
             <Link href="/" className="hover:opacity-75">
               <Image
-                src="/fss-logo-letter-white.svg"
-                width={168}
-                height={63}
+                src="/socialbetz-v1-dark-logo.svg"
+                width={38}
+                height={23}
                 placeholder="blur"
-                blurDataURL="/fss-logo-letter-white.svg"
+                blurDataURL="/socialbetz-v1-dark.svg"
                 alt="logo"
               />
             </Link>
@@ -83,14 +83,14 @@ export default function Nav() {
 
           <div className="flex gap-2 sm:gap-4 items-center">
             <button
-              className={`transition-all  w-[100px] sm:w-[120px] h-[33px] flex justify-center items-center rounded-lg text-[#443D3D] text-[12px] sm:text-[14px] font-medium hover:scale-[1.02] ${roboto.className}`}
+              className={`bg-purple-betz transition-all w-[100px] sm:w-[120px] h-[33px] flex justify-center items-center rounded-lg text-white text-[12px] sm:text-[14px] font-medium hover:scale-[1.02] ${roboto.className}`}
             >
               Connect Wallet
             </button>
 
             <button
               onClick={() => setOpen(!open)}
-              className="transition-all w-[39px] h-[33px] text-black p-1 px-2  rounded-lg hover:scale-[1.02]"
+              className="transition-all w-[39px] h-[33px] text-purple-betz p-1 px-2  rounded-lg hover:scale-[1.02]"
             >
               <svg
                 fill="none"
@@ -126,16 +126,16 @@ export default function Nav() {
                   key={index}
                   href={item.href}
                   className={`
-                    transition-all font-light text-[16px] bg-black p-4 bg-opacity-90 hover:bg-opacity-60 hover:text-white hover:border-l-[6px] hover:border-white border-green-fss rounded-lg shadow-md 
+                    transition-all font-light text-[16px] bg-purple-betz p-4 bg-opacity-90 hover:bg-opacity-60 hover:text-white hover:border-l-[6px] hover:border-white border-purple-betz rounded-lg shadow-md 
                     ${
-                      item.href === routes[4].href
+                      item.title === "Juggernauts"
                         ? "text-orange-400"
-                        : "text-green-fss"
+                        : "text-white"
                     }
                     ${
                       item.href === page.href &&
                       item.href !== routes[4].href &&
-                      "border-l-[6px] hover:text-green-fss hover:border-green-fss"
+                      "border-l-[6px] hover:text-white hover:border-white"
                     }
                     ${
                       item.href === page.href &&
@@ -151,7 +151,7 @@ export default function Nav() {
           </div>
         </Transition>
 
-        <div className="border-b pt-5 border-green-fss" />
+        <div className="border-b border-purple-betz/40 pt-5 border-green-fss" />
       </main>
     </>
   );
