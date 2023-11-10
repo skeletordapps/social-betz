@@ -9,7 +9,6 @@ const roboto = Roboto_Condensed({
 });
 
 const prognosticators = [
-  "For Social Prognosticators",
   "Create your SocialBetz Zone ",
   "Post your sports bets, sports betting strategies, and related content ",
   "Achieve a high betting win rate ",
@@ -166,10 +165,11 @@ export default function Home() {
               </div>
               {prognosticators.map((item, index) => (
                 <div key={index} className="flex items-center gap-4">
-                  <ChevronDoubleRightIcon className="w-8 xl:w-10 text-indigo-300" />
-
+                  <span className="flex justify-center items-center text-white font-medium text-3xl bg-purple-betz min-w-[50px] min-h-[50px] rounded-[8px]">
+                    {index + 1}
+                  </span>
                   <p
-                    className={`max-w-[290px] md:max-w-full text-[20px] xl:text-[28px] text-indigo-200 leading-[46px] ${roboto.className} `}
+                    className={`max-w-[290px] md:max-w-full text-[20px] xl:text-[28px] text-indigo-200 leading-[24px] md:leading-[32px] ${roboto.className}`}
                   >
                     {item}
                   </p>
@@ -182,10 +182,14 @@ export default function Home() {
               </div>
               {bettors.map((item, index) => (
                 <div key={index} className="flex items-center gap-4">
-                  <ChevronDoubleRightIcon className="w-8 xl:w-10 text-indigo-300" />
-
+                  {/* <span className="flex items-center justify-center md:text-3xl w-10 h-10 md:w-14 md:h-14 rounded-full bg-purple-betz/50 text-white font-medium shadow-lg">
+                    {index + 1}
+                  </span> */}
+                  <span className="flex justify-center items-center text-white font-medium text-3xl bg-purple-betz min-w-[50px] min-h-[50px] rounded-[8px]">
+                    {index + 1}
+                  </span>
                   <p
-                    className={`max-w-[290px] md:max-w-full text-[20px] xl:text-[28px] text-indigo-200 leading-[46px] ${roboto.className} `}
+                    className={`max-w-[290px] md:max-w-full text-[20px] xl:text-[28px] text-indigo-200 leading-[24px] md:leading-[32px] ${roboto.className} `}
                   >
                     {item}
                   </p>
